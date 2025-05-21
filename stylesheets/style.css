@@ -1,0 +1,56 @@
+/* Aplica la fuente a todos los elementos */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Selector para el título principal */
+h1 {
+  /* Alineación del texto */
+  text-align: center;
+
+  /* Grosor de la fuente negrita */
+  font-weight: bold;
+
+  font-family: 'Tangerine', serif;
+}
+
+/* Selector por id para #photo */
+#photo {
+  width: 8vw;
+  height: auto;
+}
+
+/* Selector por clase para .subtitle */
+.subtitle {
+  /* Color del texto en rgba */
+    color: rgb(151 156 165 / 0.89);
+
+    /* Transformación del texto a mayúsculas */
+    text-transform: uppercase;
+}
+
+/* Selector para <p> dentro de <footer> */
+footer p {
+  text-align: right;
+  font-style: italic;
+}
+
+/* Selector para <ul> hija inmediata de <nav> */
+nav > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Selector por elemento para <section> */
+section {
+  border: 0.2pt solid #cedddd;
+  margin: 4px 2px 8px 2px;
+  padding: 1.5% 0.8%;
+  margin-bottom: 1.2rem;
+
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+
+  box-shadow: inset 0px -10px 15px -3px rgba(235,234,234,0.6),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
