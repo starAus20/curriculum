@@ -14,29 +14,53 @@
 
 </head>
 <body>
-    <header>
-       
-        <h1>Curriculum</h1>
-        <nav>
-            <ul>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#referencias">Referencias</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header-perfil">
+    <figure>
+        <img id="photo" src="https://placehold.co/600x400?font=roboto" alt="Foto de perfil">
+    </figure>
+    <section class="info">
+        <h1>Austin<br>Estrella</h1>
+        <span class="subtitle">ING. EN COMPUTACIÓN</span>
+    </section>
+</header>
+<nav class="main-menu">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+    <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+    <ul>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+    </ul>
+</nav>
     <main>
         <section id="perfil">
             <h2 class="subtitle">Perfil</h2>
-            <img id="photo" src="https://placehold.co/600x400?font=roboto" alt="Foto de perfil">
-            <!-- Información de perfil -->
+            <p>
+                Soy estudiante de Ingeniería en Ciencia de la Computación, una carrera que me permite desarrollar habilidades en programación, análisis de datos, inteligencia artificial y resolución de problemas complejos. Me apasiona la tecnología y disfruto aprender constantemente sobre nuevas herramientas y tendencias en el mundo del software. Mi objetivo es contribuir con soluciones innovadoras y eficientes en el ámbito tecnológico, trabajando en equipo y enfrentando nuevos retos profesionales.
+            </p>
         </section>
         <section id="experiencia">
             <h2 class="subtitle">Experiencia</h2>
-            <!-- Información de experiencia -->
+            <ul>
+        <li>
+            <strong>Proyecto de Visión por Computador</strong> – Universidad<br>
+            <span style="color:#555;">2023 - Actualidad</span><br>
+            Participación en el desarrollo de un sistema de reconocimiento de imágenes utilizando Python y bibliotecas como OpenCV y TensorFlow. Implementación de modelos de aprendizaje profundo para la detección y clasificación de objetos en imágenes y videos.
+        </li>
+        <li>
+            <strong>Asistente de Investigación en Inteligencia Artificial</strong> – Facultad de Ingeniería<br>
+            <span style="color:#555;">2022 - 2023</span><br>
+            Colaboración en proyectos de investigación enfocados en visión por computador, procesamiento de imágenes y análisis de datos visuales. Apoyo en la recolección y etiquetado de datos, así como en la evaluación de modelos de IA.
+        </li>
+        <li>
+            <strong>Participante</strong> – Concurso de Innovación Tecnológica<br>
+            <span style="color:#555;">2022</span><br>
+            Desarrollo de una aplicación para el reconocimiento facial y seguimiento de objetos en tiempo real, obteniendo mención por creatividad y aplicación de técnicas avanzadas de visión por computador.
+        </li>
+    </ul>
         </section>
         <section id="educacion">
             <h2 class="subtitle">Educación</h2>
@@ -104,62 +128,66 @@
         </p>
     </article>
 </section>
-        <section id="contacto">
-            <h2 class="subtitle">Contacto</h2>
-            <!-- Información de contacto -->
+        <section id="contacto-ubicacion" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; margin-bottom: 2.5rem;">
+    <section id="contacto" style="flex: 1 1 340px; min-width: 260px; background: #b8c1ec; border-radius: 16px; box-shadow: 0 8px 18px -6px rgba(0,0,0,0.13), 0 2px 8px rgba(0,0,0,0.07); padding: 2.2rem 2.5rem;">
+        <h2 class="subtitle">Contacto</h2>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="consulta">Consulta</option>
+                <option value="trabajo">Oferta de trabajo</option>
+                <option value="otro">Otro</option>
+            </select>
 
-    <label for="motivo">Motivo de contacto:</label>
-    <select id="motivo" name="motivo" required>
-        <option value="" disabled selected>Seleccione una opción</option>
-        <option value="consulta">Consulta</option>
-        <option value="trabajo">Oferta de trabajo</option>
-        <option value="otro">Otro</option>
-    </select>
+            <fieldset style="border: none; padding: 0;">
+                <legend>¿Cómo prefieres ser contactado?</legend>
+                <label>
+                    <input type="radio" id="contacto-email" name="contacto" value="email" required>
+                    Email
+                </label>
+                <label>
+                    <input type="radio" id="contacto-telefono" name="contacto" value="telefono" required>
+                    Teléfono
+                </label>
+            </fieldset>
 
-    <fieldset style="border: none; padding: 0;">
-        <legend>¿Cómo prefieres ser contactado?</legend>
-        <label>
-            <input type="radio" id="contacto-email" name="contacto" value="email" required>
-            Email
-        </label>
-        <label>
-            <input type="radio" id="contacto-telefono" name="contacto" value="telefono" required>
-            Teléfono
-        </label>
-    </fieldset>
+            <fieldset style="border: none; padding: 0;">
+                <legend>Áreas de interés:</legend>
+                <label>
+                    <input type="checkbox" id="desarrollo" name="intereses" value="desarrollo" required>
+                    Desarrollo
+                </label>
+                <label>
+                    <input type="checkbox" id="diseño" name="intereses" value="diseño" required>
+                    Diseño
+                </label>
+                <label>
+                    <input type="checkbox" id="investigacion" name="intereses" value="investigacion" required>
+                    Investigación
+                </label>
+            </fieldset>
 
-    <fieldset style="border: none; padding: 0;">
-        <legend>Áreas de interés:</legend>
-        <label>
-            <input type="checkbox" id="desarrollo" name="intereses" value="desarrollo" required>
-            Desarrollo
-        </label>
-        <label>
-            <input type="checkbox" id="diseño" name="intereses" value="diseño" required>
-            Diseño
-        </label>
-        <label>
-            <input type="checkbox" id="investigacion" name="intereses" value="investigacion" required>
-            Investigación
-        </label>
-    </fieldset>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-    <button type="submit">Enviar</button>
-</form>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.8207693309345!2d-79.96701943046944!3d-2.1479323999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13e7e2b7b1e1%3A0x5e3b2b6e7c6e1b8e!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716138000000!5m2!1ses!2sec"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section id="ubicacion" style="flex: 1 1 340px; min-width: 260px; background: #b8c1ec; border-radius: 16px; box-shadow: 0 8px 18px -6px rgba(0,0,0,0.13), 0 2px 8px rgba(0,0,0,0.07); padding: 2.2rem 2.5rem;">
+        <h2 class="contacto-mapa-titulo">Mapa</h2>
+        <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-79.967%2C-2.148%2C-79.857%2C-2.088&amp;layer=mapnik"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            style="width:100%; height:250px; border-radius:12px; border:1px solid #b8c1ec;">
+        </iframe>
+    </section>
+</section>
     </main>
     <footer>
         <p>&copy; 2025 Austin Estrella. Todos los derechos reservados.</p>
