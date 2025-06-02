@@ -80,9 +80,7 @@
         <section id="referencias">
     <h2 class="subtitle">Referencias</h2>
     <article>
-        
-            "Un profesional comprometido y siempre dispuesto a aportar soluciones innovadoras."
-       
+        "Un profesional comprometido y siempre dispuesto a aportar soluciones innovadoras."
         <p>
             María López<br>
             Gerente de Proyectos en Empresa X.<br>
@@ -90,9 +88,7 @@
         </p>
     </article>
     <article>
-        
-            "Su capacidad para trabajar en equipo y adaptarse a los cambios es admirable."
-       
+        "Su capacidad para trabajar en equipo y adaptarse a los cambios es admirable."
         <p>
             Carlos Pérez<br>
             Líder Técnico en Empresa Y.<br>
@@ -100,9 +96,7 @@
         </p>
     </article>
     <article>
-    
-            "Siempre mostró iniciativa y una actitud positiva ante los retos."
-        
+        "Siempre mostró iniciativa y una actitud positiva ante los retos."
         <p>
             Ana Torres<br>
             Coordinadora de Voluntariado en Proyecto Z.<br>
@@ -114,13 +108,7 @@
             <h2 class="subtitle">Contacto</h2>
             <!-- Información de contacto -->
 
-            <ul>
-                <li>Correo electrónico</li>
-                <li>Teléfono</li>
-                <li>Redes sociales</li>
-            </ul>
-
-            <form action="#" method="post">
+            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required>
 
@@ -132,19 +120,33 @@
         <option value="otro">Otro</option>
     </select>
 
-    <label>¿Cómo prefieres ser contactado?</label>
-    <input type="radio" id="contacto-email" name="contacto" value="email" required>
-    <label for="contacto-email">Email</label>
-    <input type="radio" id="contacto-telefono" name="contacto" value="telefono" required>
-    <label for="contacto-telefono">Teléfono</label>
+    <fieldset style="border: none; padding: 0;">
+        <legend>¿Cómo prefieres ser contactado?</legend>
+        <label>
+            <input type="radio" id="contacto-email" name="contacto" value="email" required>
+            Email
+        </label>
+        <label>
+            <input type="radio" id="contacto-telefono" name="contacto" value="telefono" required>
+            Teléfono
+        </label>
+    </fieldset>
 
-    <label for="intereses">Áreas de interés:</label>
-    <input type="checkbox" id="desarrollo" name="intereses" value="desarrollo" required>
-    <label for="desarrollo">Desarrollo</label>
-    <input type="checkbox" id="diseño" name="intereses" value="diseño" required>
-    <label for="diseño">Diseño</label>
-    <input type="checkbox" id="investigacion" name="intereses" value="investigacion" required>
-    <label for="investigacion">Investigación</label>
+    <fieldset style="border: none; padding: 0;">
+        <legend>Áreas de interés:</legend>
+        <label>
+            <input type="checkbox" id="desarrollo" name="intereses" value="desarrollo" required>
+            Desarrollo
+        </label>
+        <label>
+            <input type="checkbox" id="diseño" name="intereses" value="diseño" required>
+            Diseño
+        </label>
+        <label>
+            <input type="checkbox" id="investigacion" name="intereses" value="investigacion" required>
+            Investigación
+        </label>
+    </fieldset>
 
     <label for="mensaje">Mensaje:</label>
     <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
@@ -160,7 +162,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Austin Estrella. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
